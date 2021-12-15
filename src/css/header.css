@@ -29,6 +29,7 @@ nav {
   justify-content: center;
   align-items: center;
   position: relative;
+  /* margin-left: 6vw; */
 }
 /* sdasd */
 
@@ -60,7 +61,43 @@ nav {
   color: whitesmoke !important;
   font-size: 18px;
 }
-@media screen and (max-width: 560px) {
+#git{
+  
+  position: fixed;
+  color: aliceblue;
+  left: 20px;
+  top: 87vh;
+  animation-name: identifier;
+  animation-duration: 3s;
+  /* animation-delay: ; */
+}
+#github{
+  display: inline-block;
+  /* opacity: 0; */
+  left: 20px;
+  top: 86vh;
+  animation-name: github;
+  animation-duration: 8s;
+}
+@keyframes github {
+  0%{opacity: 0;}
+  100%{opacity: 2}
+}
+@keyframes identifier {
+  0%{top: 0vh;}
+  10%{top: 87vh;}
+  20%{top: 50vh;}
+  30%{top: 87vh;}
+  40%{top: 70vh;}
+  50%{top: 87vh;}
+  60%{top: 80vh;}
+  70%{top: 87vh;}
+  80%{top: 82vh;}
+  100%{top: 87vh; display: block;}
+}
+
+/*  */
+@media screen and (max-width: 640px) {
   nav {
     position: initial;
     margin-top: -2px;

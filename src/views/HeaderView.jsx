@@ -64,18 +64,30 @@ const HeaderView = () => {
                 <div><p className={color}>Curriculum</p></div>
             </div> */}
             <nav style={{ background, color }}>
-                {(toggleMenu || screenWidth > 560) && (
-                    <ul className="list">
-                        <Link className={color} to="/">
 
-                            Home
-                        </Link>
+                {(toggleMenu || screenWidth > 640) && (
+                    <>
+                        <ul className="list">
 
-                        <Link className={color} to="/Proyectos"> Proyectos</Link>
-                        <Link className={color} to="/">Sobre mi</Link>
-                        <Link className={color} to="/">Contactame</Link>
-                    </ul>
+
+                            <Link className={color} to="/">
+
+                                Home
+                            </Link>
+
+                            <Link className={color} to="/Proyectos"> Proyectos</Link>
+                            <Link className={color} to="/">Sobre mi</Link>
+                            <Link className={color} to="/">Contactame</Link>
+                        </ul>
+                    </>
                 )}
+
+                <a id="git" className={color} href="https://github.com/Eliseonop">
+
+                    <i class="fab fa-github fs-3"></i>
+                    <div id="github">github</div>
+                </a>
+
                 <button onClick={toggleNav} className="btn">
                     {!toggleMenu ?
                         <i className="fas fa-align-right fs-1"></i>
