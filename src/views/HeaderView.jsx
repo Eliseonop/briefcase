@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import "../css/header.css"
+import { Link } from "react-router-dom"
 const HeaderView = () => {
     const [background, setBackground] = useState("transparent");
     const [color, setColor] = useState("text-white  items");
@@ -12,7 +13,7 @@ const HeaderView = () => {
 
             const backgroundColor = y <= 0 ? 'white' : 'transparent';
             setBackground(backgroundColor);
-            const textcolor = y <= 150 ? 'text-white  fw-bold items' : 'text-white  items'
+            const textcolor = y <= 0 ? 'text-black    fw-bold items' : 'text-white  items'
             setColor(textcolor)
             if (y <= 0) {
                 setToggleMenu(false)
@@ -65,10 +66,14 @@ const HeaderView = () => {
             <nav style={{ background, color }}>
                 {(toggleMenu || screenWidth > 560) && (
                     <ul className="list">
-                        <li className={color}>Home</li>
-                        <li className={color}>Proyectos</li>
-                        <li className={color}>Sobre mi</li>
-                        <li className={color}>Contactame</li>
+                        <Link className={color} to="/">
+
+                            Home
+                        </Link>
+
+                        <Link className={color} to="/Proyectos"> Proyectos</Link>
+                        <Link className={color} to="/">Sobre mi</Link>
+                        <Link className={color} to="/">Contactame</Link>
                     </ul>
                 )}
                 <button onClick={toggleNav} className="btn">
