@@ -1,0 +1,74 @@
+#container-home {
+  min-height: 77vh;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* margin-top: 20px; */
+}
+.cont-1:hover{
+  
+  transition: 0.6s;
+  transform: scale(1.2);
+}
+/* El boton Ver proyectos */
+#title-1 {
+  font-size: 50px;
+
+
+  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+  /* border: 1px solid #333; */
+  animation-name: animacion;
+  /* transition: 0.5s;
+  animation-duration: 4s; */
+
+}
+/* @keyframes animacion {
+  0% {transform: rotate(360deg);}
+} */
+/* #title-1:hover {
+  transform: scale(1.2);
+  transform-origin: bottom left;
+
+  color: whitesmoke;
+} */
+
+#boton-a {
+  max-width: 150px;
+  padding: 10px 15px;
+  color: blanchedalmond;
+  background-color: black;
+  font-weight: 600;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#boton-a:hover {
+  color: rgb(3, 3, 3);
+  background-color: rgb(255, 251, 251);
+}
+#dev {
+  
+  font-size: 30px;
+  color: rgb(119, 119, 128) !important;
+}
+
+#img{
+  display: flex;
+  max-width: 490px;
+  max-height: 450px;
+  
+  transition: 0.6s;
+}
+#img:hover {
+  transform: scale(1.2);}
+#container-2{
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  #img{
+    width: 300px;
+    margin-bottom: 70px;
+  }
+}
