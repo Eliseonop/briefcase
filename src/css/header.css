@@ -11,15 +11,12 @@
     background-color: black;
 } */
 nav {
-    
+  z-index: 1;
   transition: 0.5s;
   position: fixed;
   top: 0;
   margin-top: 20px;
   width: 100%;
-  /* height: 50px; */
-  /* padding-bottom: 25px; */
-  /* background: linear-gradient (45deg, Orgb(156, 14, 156), Omidnightblue); */
 }
 /* list */
 .list {
@@ -29,6 +26,7 @@ nav {
   justify-content: center;
   align-items: center;
   position: relative;
+  transition: 1s;
   /* margin-left: 6vw; */
 }
 /* sdasd */
@@ -44,7 +42,7 @@ nav {
   color: aliceblue;
   /* color: aliceblue !important; */
 }
-.items:hover{
+.items:hover {
   transform: scale(1.1);
 }
 
@@ -60,9 +58,9 @@ nav {
   padding: 5px;
   color: whitesmoke !important;
   font-size: 18px;
+  /* margin-bottom: 25px; */
 }
-#git{
-  
+#git {
   position: fixed;
   color: aliceblue;
   left: 20px;
@@ -71,7 +69,7 @@ nav {
   animation-duration: 3s;
   /* animation-delay: ; */
 }
-#github{
+#github {
   display: inline-block;
   /* opacity: 0; */
   left: 20px;
@@ -80,20 +78,45 @@ nav {
   animation-duration: 8s;
 }
 @keyframes github {
-  0%{opacity: 0;}
-  100%{opacity: 2}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 2;
+  }
 }
 @keyframes identifier {
-  0%{top: 0vh;}
-  10%{top: 87vh;}
-  20%{top: 50vh;}
-  30%{top: 87vh;}
-  40%{top: 70vh;}
-  50%{top: 87vh;}
-  60%{top: 80vh;}
-  70%{top: 87vh;}
-  80%{top: 82vh;}
-  100%{top: 87vh; display: block;}
+  0% {
+    top: 0vh;
+  }
+  10% {
+    top: 87vh;
+  }
+  20% {
+    top: 50vh;
+  }
+  30% {
+    top: 87vh;
+  }
+  40% {
+    top: 70vh;
+  }
+  50% {
+    top: 87vh;
+  }
+  60% {
+    top: 80vh;
+  }
+  70% {
+    top: 87vh;
+  }
+  80% {
+    top: 82vh;
+  }
+  100% {
+    top: 87vh;
+    display: block;
+  }
 }
 
 /*  */
@@ -103,12 +126,20 @@ nav {
     margin-top: -2px;
     display: block;
     background-color: black !important;
+    transition: 1.6s;
+  }
+  #git {
+    display: none;
+    /* opacity: 0; */
+    left: 20px;
+    top: 86vh;
   }
   .list {
     flex-direction: column;
     min-height: 100vh;
     background-color: black;
     margin: 0;
+    transition: 1.6s;
   }
   .items {
     width: 100%;
@@ -121,5 +152,6 @@ nav {
   }
   .btn {
     display: block;
+    transition: 1.6s;
   }
 }

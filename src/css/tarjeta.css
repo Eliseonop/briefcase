@@ -1,0 +1,19 @@
+#tarjeta-comp {
+  /* display: flex; */
+  flex-direction: column;
+  /* background: #7f7f7f; */
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  /* position: relative; */
+  height: 200px;
+  width: 200px;
+}
+#img-tarj {
+  width: 100px;
+  height: 100px;
+  margin: 5px 25px;
+}
+.progress {
+  border: 1px solid black;
+}

@@ -1,0 +1,57 @@
+#contenedor-about,
+#contenedor-about-2 {
+  margin-top: 100px;
+  background-color: #758592;
+}
+#cont-about-1 {
+  min-height: 70vh;
+}
+#cont-about-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+#boton-a-about {
+  padding: 10px 25px;
+  background-color: black;
+  font-size: 20px;
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+  transition: 0.5s;
+}
+#boton-a-about:hover {
+  background-color: whitesmoke;
+  color: black;
+  border: 1px solid black;
+}
+/* conocimientos */
+
+#cf-about-2 {
+  /* margin-top: 100px; */
+  min-height: 30vh;
+
+  background-color: #eeeff1;
+}
+#cf-about-2 h4 {
+  display: block;
+  padding: 25px 50px;
+}
+#title-conocimientos {
+  margin-top: 15vh;
+  text-align: center;
+  padding: 50px 0;
+}
+#title-conocimientos h2 {
+  /* margin-top: 200px; */
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+#lenguajes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 200px;
+  width: 100vw;
+}

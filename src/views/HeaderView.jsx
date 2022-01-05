@@ -76,7 +76,7 @@ const HeaderView = () => {
                             </Link>
 
                             <Link className={color} to="/Proyectos"> Proyectos</Link>
-                            <Link className={color} to="/">Sobre mi</Link>
+                            <Link className={color} to="/About">Sobre mi</Link>
                             <Link className={color} to="/">Contactame</Link>
                         </ul>
                     </>

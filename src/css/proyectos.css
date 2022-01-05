@@ -1,12 +1,65 @@
-#cont-1{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: auto;
+#contenedor-padre {
+  margin-top: 100px;
+  min-height: 70vh;
+  background-color: rgb(234, 238, 238);
+  /* background-blend-mode: multiply; */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.h2{
-    
+#contenedor-proy1 {
+  display: flex;
+  align-self: center;
+}
+#title-p {
+  text-shadow: burlywood;
+  margin-bottom: 20px;
+}
+/* aqui va las iamgenes */
+#img-proy {
+  width: 600px;
+  height: 350px;
+  border: 2px solid black;
+  transition: 0.5s;
+}
+/* #img-proy:hover {
+  transform: scale(1.1);
+} */
+.h2 {
+  font-size: 50px;
+}
+#enlace a {
+  padding: 10px 25px;
+  background-color: black;
+  font-size: 20px;
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+  transition: 0.5s;
+}
+#enlace a:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(245, 255, 250);
+  border: 1px solid black;
+}
+@media screen and (max-width: 990px) {
+  #contenedor-padre {
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+  }
+  #contenedor-proy1 {
+    margin-bottom: 50px;
+
+    justify-content: center;
+  }
+  #contenedor-proy2 {
+    display: flex;
+    justify-content: center;
+  }
+  #img-proy {
+    width: auto;
+    height: 200px;
+  }
 }

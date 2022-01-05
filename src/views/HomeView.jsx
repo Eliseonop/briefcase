@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap"
 import "../css/homeView.css"
 import img from "../assets/img.svg"
+import { Link } from "react-router-dom"
 const HomeView = () => {
     return (
         <div>
@@ -12,7 +13,7 @@ const HomeView = () => {
                             <h1 id="title-1">Edu Falcon</h1>
 
                             <p id="dev">Developer Web Full-Stack</p>
-                            <a id="boton-a">Ver Proyectos</a>
+                            <Link to='/Proyectos' id="boton-a">Ver Proyectos</Link>
                             {/* asdasdsad */}
 
                         </div>
