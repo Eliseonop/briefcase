@@ -6,6 +6,11 @@
 #cont-about-1 {
   min-height: 70vh;
 }
+#cont-about-1 img{
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
 #cont-about-2 {
   display: flex;
   flex-direction: column;

@@ -2,6 +2,7 @@ import sass from "./diseno/sass.svg";
 import materialui from "./diseno/materialui.svg";
 import bootstrap from "./diseno/bootstrap.svg";
 import tailwindcss from "./diseno/tailwindcss.svg";
+
 const diseno = [
   {
     imagen: bootstrap,
